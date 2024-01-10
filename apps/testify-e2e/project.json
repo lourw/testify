@@ -1,0 +1,26 @@
+{
+  "name": "testify-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/testify-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/testify-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "testify:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "testify:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["testify"]
+}
