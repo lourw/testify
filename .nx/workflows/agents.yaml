@@ -47,18 +47,6 @@ launch-templates:
       - name: Sleep
         script: |
           sleep 30
-  linux-3:
-    resource-class: 'docker_linux_amd64/medium+'
-    env:
-      NX_VERBOSE_LOGGING: 'true'
-      NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
-    init-steps:
-      - name: Echo Hello World
-        script: |
-          echo "HELLO WORLD"
-        name2: Sleep
-        script2: |
-          sleep 30
   linux-4:
     resource-class: 'dinosaur'
     env:
