@@ -1,6 +1,6 @@
 launch-templates:
-  linux-small:
-    resource-class: 'docker_linux_amd64bleh/medium+'
+  linux-1:
+    resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
       NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
@@ -11,7 +11,55 @@ launch-templates:
       - name: Sleep
         script: |
           sleep 30
-  linux-medium:
+  linux-2:
+    resource-class: 'docker_linux_amd64/medium+'
+    env:
+      NX_VERBOSE_LOGGING: 'true'
+      NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
+    initey-steps:
+      - name: Echo Hello World
+        script: |
+          echo "HELLO WORLD"
+      - name: Sleep
+        script: |
+          sleep 30
+  linux-6:
+    resource-class: 'docker_linux_amd64/medium+'
+    env:
+      NX_VERBOSE_LOGGING: 'true'
+      NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKENS}}'
+    init-steps:
+      - name: Echo Hello World
+        script: |
+          echo "HELLO WORLD"
+      - name: Sleep
+        script: |
+          sleep 30
+  linux-5:
+    resource-class: 'docker_linux_amd64/medium+'
+    env:
+      NX_VERBOSE_LOGGING: 'true'
+      NX_CLOUD_ACCESS_TOKEN: '{{secretss.NX_CLOUD_ACCESS_TOKEN}}'
+    init-steps:
+      - name: Echo Hello World
+        script: |
+          echo "HELLO WORLD"
+      - name: Sleep
+        script: |
+          sleep 30
+  linux-3:
+    resource-class: 'docker_linux_amd64/medium+'
+    env:
+      NX_VERBOSE_LOGGING: 'true'
+      NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
+    init-steps:
+      - name: Echo Hello World
+        script: |
+          echo "HELLO WORLD"
+        name2: Sleep
+        script2: |
+          sleep 30
+  linux-4:
     resource-class: 'dinosaur'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -23,4 +71,3 @@ launch-templates:
       - name: Sleep
         script: |
           sleep 30
-
