@@ -59,3 +59,14 @@ launch-templates:
       - name: Sleep
         script: |
           sleep 30
+  linux-7:
+  env:
+    NX_VERBOSE_LOGGING: 'true'
+    NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
+  init-steps:
+    - name: Echo Hello World
+      script: |
+        echo "HELLO WORLD"
+    - name: Sleep
+      script: |
+        sleep 30
