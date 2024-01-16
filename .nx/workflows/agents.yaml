@@ -64,15 +64,3 @@ launch-templates:
       - name: Sleep
         script: |
           sleep 30
-  linux-7:
-    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
-    env:
-      NX_VERBOSE_LOGGING: 'true'
-      NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
-    init-steps:
-      - name: Echo Hello World
-        script: |
-          echo "HELLO WORLD"
-      - name: Sleep
-        script: |
-          sleep 30
