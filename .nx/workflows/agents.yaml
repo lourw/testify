@@ -1,5 +1,6 @@
 launch-templates:
   linux-1:
+    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -12,6 +13,7 @@ launch-templates:
         script: |
           sleep 30
   linux-2:
+    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -24,6 +26,7 @@ launch-templates:
         script: |
           sleep 30
   linux-6:
+    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -36,6 +39,7 @@ launch-templates:
         script: |
           sleep 30
   linux-5:
+    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -49,6 +53,7 @@ launch-templates:
           sleep 30
   linux-4:
     resource-class: 'dinosaur'
+    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
     env:
       NX_VERBOSE_LOGGING: 'true'
       NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
@@ -60,6 +65,7 @@ launch-templates:
         script: |
           sleep 30
   linux-7:
+    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
     env:
       NX_VERBOSE_LOGGING: 'true'
       NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
