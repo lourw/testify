@@ -1,6 +1,6 @@
 launch-templates:
   linux-1:
-    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
+    image: us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud-enterprise-public/nx-agents-base-images:ubuntu22.04-node20.9-withDind-v1
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -13,7 +13,7 @@ launch-templates:
         script: |
           sleep 30
   linux-2:
-    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
+    image: us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud-enterprise-public/nx-agents-base-images:ubuntu22.04-node20.9-withDind-v1
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -26,7 +26,7 @@ launch-templates:
         script: |
           sleep 30
   linux-6:
-    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
+    image: us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud-enterprise-public/nx-agents-base-images:ubuntu22.04-node20.9-withDind-v1
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
@@ -39,7 +39,7 @@ launch-templates:
         script: |
           sleep 30
   linux-5:
-    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud/nx-cloud-build-tools:2401.03.3'
+    image: 'us-east1-docker.pkg.dev/nxcloudoperations/nx-cloud-enterprise-public/nx-agents-base-images:ubuntu22.04-node20.9-withDind-v1'
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
