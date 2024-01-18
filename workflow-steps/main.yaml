@@ -1,0 +1,6 @@
+name: Do Something with Node
+description: Going to do something crazy
+
+definition:
+  using: 'node'
+  main: workflow-steps/main.js
