@@ -6,6 +6,8 @@ launch-templates:
       NX_VERBOSE_LOGGING: 'true'
       NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
     init-steps:
+      - name: Uses Step
+        uses: 'lourw/testify/workflow-steps/main.yaml'
       - name: Echo Hello World
         script: |
           echo "HELLO WORLD"
