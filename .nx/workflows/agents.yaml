@@ -36,6 +36,8 @@ launch-templates:
       NX_VERBOSE_LOGGING: 'true'
       NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKENS}}'
     init-steps:
+      - name: Uses Wrong
+        uses: asd
       - name: Echo Hello World
         script: |
           echo "HELLO WORLD"
