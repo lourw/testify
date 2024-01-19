@@ -22,7 +22,7 @@ launch-templates:
       NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
     init-steps:
       - name: Uses Incorrect
-        uses: 'incorrectUsesFile'
+        uses: lourw/testify/main/workflow-step/main.yaml
       - name: Echo Hello World
         script: |
           echoses "HELLO WORLD"
