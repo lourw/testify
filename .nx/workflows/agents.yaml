@@ -30,7 +30,7 @@ launch-templates:
         script: |
           sleep 30
   linux-6:
-    image: invalid-image
+    image: ubuntu22.04-node20.9-v1
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
