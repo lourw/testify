@@ -1,0 +1,3 @@
+name: Error missing fields
+description: Missing some fields
+main: main.js
