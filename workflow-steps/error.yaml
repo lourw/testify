@@ -1,0 +1,5 @@
+name: Error Yaml
+description: "Some error happened here"
+definition:
+  using:
+  main: asdf
