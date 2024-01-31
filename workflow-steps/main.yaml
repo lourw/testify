@@ -1,6 +1,7 @@
 name:
 description: Going to do something crazy
 
+wabbit: invalid key
 definition:
   using: 'node'
   main: workflow-steps/main.js

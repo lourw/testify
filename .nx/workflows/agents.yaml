@@ -1,19 +1,17 @@
 launch-templates:
   linux-1:
-    image: ubuntu22.04-node20.9-v1
+    image: ubuntu22.04-node20.9-v3
     resource-class: 'docker_linux_amd64/medium+'
     env:
       NX_VERBOSE_LOGGING: 'true'
       NX_CLOUD_ACCESS_TOKEN: '{{secrets.NX_CLOUD_ACCESS_TOKEN}}'
     init-steps:
-      - name: Uses Step
-        uses: 'lourw/testify/main/workflow-steps/main.yaml'
       - name: Echo Hello World
         script: |
           echo "HELLO WORLD"
       - name: Sleep
         script: |
-          sleep 30
+          sleep 30000000000000
   linux-2:
     image: ubuntu22.04-node20.9-v1
     resource-class: 'docker_linux_amd64/medium+'
